@@ -1,6 +1,6 @@
 Feature:
 
-@Sanity2
+@Sanity
 Scenario Outline: Create a new Leave Type and assert that the Leave Type is created successfully.
 
     Given User navigates to OrangeHRM login page
@@ -33,7 +33,7 @@ Examples:
       | leavename |
       | CAN - Bereavement   |
 
-@Sanity2
+@Sanity
 Scenario Outline: Assign a Leave Type to an employee and assert that the Leave Type is assigned successfully.
 
     Given User navigates to OrangeHRM login page

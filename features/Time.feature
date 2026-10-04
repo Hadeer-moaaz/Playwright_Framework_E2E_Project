@@ -1,6 +1,6 @@
 Feature:TimeSheet 
 
-@Sanity
+@Regression2
 Scenario Outline:  View and Edit in Time Sheet for Employee Name
     Given User navigates to OrangeHRM login page
     When User login with a valid credentials
