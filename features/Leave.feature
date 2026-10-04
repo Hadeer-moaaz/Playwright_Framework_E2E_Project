@@ -14,7 +14,7 @@ Scenario Outline: Create a new Leave Type and assert that the Leave Type is crea
 
 Examples:
       | leavename |
-      | Wedding Leave |
+      | Paternity001 Leave |
 
 
 @Sanity2
@@ -40,7 +40,7 @@ Scenario Outline: Assign a Leave Type to an employee and assert that the Leave T
     When User login with a valid credentials
     When User navigates to Leave Page   
     Then Click on Assign Leave Tab 
-    And Fill the Assign Leave details with "<EmployeeName>" and "<Comments>" and "<FromDate>" and "<ToDate>" and click on Assign button
+    And Fill the Assign Leave details with "<EmployeeName>" from the automcomplete and "<Comments>" and "<FromDate>" and "<ToDate>" and click on Assign button
 
 
 Examples:

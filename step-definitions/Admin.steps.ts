@@ -16,7 +16,7 @@ Then('Click on add button and assert the url is displayed', async function (this
 
 })
 
-When('Create a new Admin details with {string} and {string} and {string} and {string} and save button'
+When('Create a new Admin details with {string} from the automcomplete and {string} and {string} and {string} and save button'
     , async function (this: CustomWorld, 
         EmployeeName: string, 
         username: string, 

@@ -56,7 +56,7 @@ Then ('Click on Assign Leave Tab',async function (this: CustomWorld) {
 });
 
 
-Then ('Fill the Assign Leave details with {string} and {string} and {string} and {string} and click on Assign button'
+Then ('Fill the Assign Leave details with {string} from the automcomplete and {string} and {string} and {string} and click on Assign button'
     ,async function (this: CustomWorld, employeeName: string, comments: string, fromDate: string, toDate: string) {
         await this.LeavePage.AssignLeaveSteps(employeeName, fromDate, toDate, comments);
 });

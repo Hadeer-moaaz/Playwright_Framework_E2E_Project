@@ -1,12 +1,13 @@
 # OrangeHRM End-to-End Testing Framework
 
-An end-to-end testing framework for the OrangeHRM application, built with **Playwright, TypeScript, and Cucumber BDD**. The project is being developed from scratch with maintainable automation practices, reusable page objects, readable Gherkin scenarios, and continuous integration in mind.
+An end-to-end testing framework for the OrangeHRM application, built with **Playwright, TypeScript, and Cucumber BDD**. The project includes a working OrangeHRM Time module flow and demonstrates maintainable automation practices, reusable page objects, readable Gherkin scenarios, and a repeatable debugging workflow for real-world UI drift.
 
 ## Project Goals
 
-- Validate key OrangeHRM user journeys, including authentication and employee management.
+- Validate key OrangeHRM user journeys, including authentication, employee management, and the Timesheet workflow.
 - Use Cucumber and Gherkin to express behavior in a form that is readable by technical and non-technical team members.
 - Build a maintainable Playwright framework with TypeScript, page objects, shared test support, and reusable step definitions.
+- Adapt automation to actual application behavior when the UI differs from assumptions, including conditional selectors and dynamic page states.
 - Explore Playwright's tooling, including the Inspector, Trace Viewer, and Codegen for recording and generating test interactions.
 - Use GitHub Copilot in VS Code, AI agents, and MCP servers to support test planning, framework development, and debugging.
 - Run automated checks through GitHub Actions and Azure DevOps, with Docker-based CI execution as part of the containerization work.
@@ -49,20 +50,26 @@ reports/                  Cucumber HTML report output
 git clone <repository-url>
 cd <repository-directory>
 npm ci
-npx playwright install
+npx playwright install --with-deps
 ```
 
 The tests target the public OrangeHRM demo application. Demo data is shared and may change, so tests that create records should use unique values and clean up when possible.
 
 ## Running Tests
 
-Run the Cucumber BDD suite:
+Run the full Cucumber BDD suite:
 
 ```bash
 npm run test:bdd
 ```
 
-Run Cucumber scenarios by tag:
+Run the Time-sheet scenario by tag:
+
+```bash
+npx cucumber-js --tags "@Regression2" --retry 1 --exit --format progress
+```
+
+Run the tagged regression/smoke/sanity scripts:
 
 ```bash
 npm run cucumberRegression
@@ -75,8 +82,22 @@ Run the Playwright Test suite:
 ```bash
 npm run test:playwright
 ```
-
 Cucumber reports are written to `reports/cucumber-report.html` when using the default Cucumber configuration. The tagged npm scripts generate `cucumber-report.html` in the repository root. Playwright is configured to collect traces on the first retry and retain screenshots and videos for failures.
+
+
+
+## Current Status
+
+The project is in a working state for the verified Timesheet scenario. The implementation has been adjusted to match the actual OrangeHRM UI behavior rather than assuming static selectors and immutable date fields. The successful flow covers:
+
+- Logging in with valid credentials.
+- Opening the Time module.
+- Viewing a timesheet record.
+- Editing the record and handling conditional project/activity selectors.
+- Filling the required row data.
+- Saving and validating the submitted status.
+
+This is a good baseline for extending the project with additional OrangeHRM journeys and additional BDD coverage.
 
 ## Playwright Tooling
 
@@ -101,6 +122,7 @@ Current BDD scenarios focus on:
 - Login success, invalid credentials, and required-field validation.
 - Searching for existing and non-existing employees in the PIM Employee List.
 - Creating an employee and checking that the employee appears in search results.
+- Editing and saving a Timesheet record through the actual OrangeHRM Time module UI.
 
 See [the OrangeHRM test plan](specs/orangehrm-test-plan.md) for broader planned coverage.
 
