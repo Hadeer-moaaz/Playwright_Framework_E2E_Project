@@ -93,6 +93,7 @@ async AddLeaveTypeSteps(leaveName: string) {
 }
 
 async AssignLeaveSteps(employeeName: string, fromDate: string, toDate: string, comments: string) {
+    
     await this.employeeNameInput.fill(employeeName);
     const searchingIndicator = this.page.getByText('Searching...');
     const firstSuggestion = this.page.locator('.oxd-autocomplete-dropdown')
@@ -101,6 +102,7 @@ async AssignLeaveSteps(employeeName: string, fromDate: string, toDate: string, c
     await searchingIndicator.waitFor({ state: 'hidden', timeout: 20000 }).catch(() => {});
     await expect(firstSuggestion).toBeVisible({ timeout: 10000 });
     await firstSuggestion.click();
+
 
     await this.selectLeaveDropdown.click();
     await this.selectLeaveOption.waitFor({ state: 'visible' });

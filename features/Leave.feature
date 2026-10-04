@@ -1,6 +1,6 @@
-Feature: Feature name
+Feature:
 
-@Sanity
+@Sanity2
 Scenario Outline: Create a new Leave Type and assert that the Leave Type is created successfully.
 
     Given User navigates to OrangeHRM login page
@@ -14,7 +14,7 @@ Scenario Outline: Create a new Leave Type and assert that the Leave Type is crea
 
 Examples:
       | leavename |
-      | Maternity4563rte Leave |
+      | Wedding Leave |
 
 
 @Sanity2

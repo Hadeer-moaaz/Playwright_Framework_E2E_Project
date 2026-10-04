@@ -1,8 +1,7 @@
-import { Given, Then, When } from '@cucumber/cucumber';
+import { Then, When } from '@cucumber/cucumber';
 import { expect } from '@playwright/test';
 import loginData from '../test-data/login.json';
 import type { CustomWorld } from '../support/world';
-import { write } from 'fs';
 
 Then('Check that the PIM url is displayed', async function (this: CustomWorld) {
   await expect(this.PIMPage.page).toHaveURL(`${loginData.baseUrl}/pim/viewEmployeeList`);

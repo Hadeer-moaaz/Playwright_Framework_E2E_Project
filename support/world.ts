@@ -4,6 +4,8 @@ import type { LoginPage } from '../pages/LoginPage';
 import type { dashboardPage } from '../pages/dashboardPage';
 import type { PIMPage } from '../pages/PIMPage';
 import type { LeavePage } from '../pages/LeavePage';
+import {AdminPage} from '../pages/AdminPage';
+import {TimePage} from '../pages/TimePage';
 
 export class CustomWorld extends World {
   browser!: Browser;
@@ -13,6 +15,8 @@ export class CustomWorld extends World {
   dashboardPage!: dashboardPage;
   PIMPage!: PIMPage;
   LeavePage!: LeavePage;
+  AdminPage!: AdminPage;
+  TimePage! : TimePage;
 
   constructor(options: IWorldOptions) {
     super(options);

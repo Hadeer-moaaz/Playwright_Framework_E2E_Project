@@ -4,6 +4,8 @@ import { LoginPage } from '../pages/LoginPage';
 import { dashboardPage } from '../pages/dashboardPage';
 import { PIMPage } from '../pages/PIMPage';
 import {LeavePage} from '../pages/LeavePage';
+import {AdminPage} from '../pages/AdminPage';
+import {TimePage} from '../pages/TimePage';
 
 import type { CustomWorld } from './world';
 
@@ -29,6 +31,8 @@ Before(async function (this: CustomWorld) {
   this.dashboardPage = new dashboardPage(this.page);
   this.PIMPage = new PIMPage(this.page);
   this.LeavePage = new LeavePage(this.page);
+  this.AdminPage = new AdminPage(this.page);
+  this.TimePage = new TimePage(this.page);
 
 });
 

@@ -1,4 +1,13 @@
 {
+  "editor.tabCompletion": "on",
+  "editor.quickSuggestions": {
+    "other": "on",
+    "comments": "off",
+    "strings": "on"
+  },
+   "editor.quickSuggestionsDelay": 10,
+  "editor.suggestOnTriggerCharacters": true,
+  "editor.acceptSuggestionOnEnter": "on",
   "cucumberautocomplete.steps": [
     "step-definitions/**/*.ts"
   ],
@@ -22,6 +31,8 @@
   },
   "cucumberautocomplete.onTypeFormat": true,
   "[gherkin]": {
-    "editor.defaultFormatter": "alexkrechik.cucumberautocomplete"
-  }
+    "editor.defaultFormatter": "alexkrechik.cucumberautocomplete",
+    "editor.inlineSuggest.enabled": true
+  },
+  "chat.disableAIFeatures": false
 }
