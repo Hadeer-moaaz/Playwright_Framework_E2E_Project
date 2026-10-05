@@ -37,17 +37,6 @@ jobs:
           path: playwright-report/
           retention-days: 30
 
----
-# Legacy workflow content below is intentionally ignored by GitHub Actions.
- Tests
-
-on:
-    workflow_dispatch:   # only runs when manually triggered from the Actions tab
-  # push:
-  #   branches: [main, master]
-  # pull_request:
-  #   branches: [main, master]
-jobs:
   test:
     timeout-minutes: 60
     runs-on: ubuntu-latest

@@ -37,17 +37,6 @@ jobs:
           path: test-results/
           retention-days: 30
 
----
-# Legacy workflow content below is intentionally ignored by GitHub Actions.
- Tests
-
-on:
-  push:
-    branches: [main, master]
-  pull_request:
-    branches: [main, master]
-
-jobs:
   cucumber-regression_testing:
     timeout-minutes: 60
     runs-on: ubuntu-latest
