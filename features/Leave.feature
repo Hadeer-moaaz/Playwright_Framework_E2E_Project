@@ -14,7 +14,7 @@ Scenario Outline: Create a new Leave Type and assert that the Leave Type is crea
 
 Examples:
       | leavename |
-      | Paternity505 Leave |
+      | Paternity999 Leave |
 
 
 @Sanity2
@@ -33,7 +33,7 @@ Examples:
       | leavename |
       | CAN - Bereavement   |
 
-@Sanity
+@smoke
 Scenario Outline: Assign a Leave Type to an employee and assert that the Leave Type is assigned successfully.
 
     Given User navigates to OrangeHRM login page

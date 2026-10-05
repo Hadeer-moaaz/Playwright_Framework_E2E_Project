@@ -19,7 +19,7 @@ Scenario Outline: Create a new employee and search for it in the Employee List p
 
     Examples:
       | firstname | lastname | employeeId |employeename|
-      | David|  Omar|  201|  David Omar| 
+      | David|  Omar|  794|  David Omar| 
 
 @Regression2
  Scenario Outline: Search for an non-existing employee in the Employee List page.

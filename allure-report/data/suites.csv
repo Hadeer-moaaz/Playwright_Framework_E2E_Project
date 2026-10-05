@@ -1,23 +1,28 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","27406","Create a new employee and search for it in the Employee List page then delete all the records in the Employee List page.","","2026-10-04","passed","2026-10-04","","","",""
 "","10304","Search for an non-existing employee in the Employee List page.","","2026-10-04","passed","2026-10-04","","","",""
-"","12763","Assign a Leave Type to an employee and assert that the Leave Type is assigned successfully.","","2026-10-04","passed","2026-10-04","","","",""
+"As an OrangeHRM user
+  I want to login with valid credentials
+  So that I can access the employee dashboard","5298","login is rejected when credentials are missing","","2026-10-04","passed","2026-10-04","","","",""
+"","24245","Create a new employee and search for it in the Employee List page then delete all the records in the Employee List page.","","2026-10-05","passed","2026-10-05","","","",""
 "","14165","","","2026-10-04","passed","2026-10-04","","","",""
 "As an OrangeHRM user
   I want to login with valid credentials
   So that I can access the employee dashboard","5592","login is rejected when credentials are missing","","2026-10-04","passed","2026-10-04","","","",""
-"As an OrangeHRM user
-  I want to login with valid credentials
-  So that I can access the employee dashboard","6889","login is rejected when credentials are missing","","2026-10-04","passed","2026-10-04","","","",""
-"","22881","View and Edit in Time Sheet for Employee Name","","2026-10-04","passed","2026-10-04","","","",""
-"","12624","Create an existing Leave Type and assert that Already exists message is displayed.","","2026-10-04","passed","2026-10-04","","","",""
+"","22386","Assign a Leave Type to an employee and assert that the Leave Type is assigned successfully.","","2026-10-05","passed","2026-10-05","","","",""
+"","33215","View and Edit in Time Sheet for Employee Name","","2026-10-05","passed","2026-10-05","","","",""
+"","20558","Create a new Leave Type and assert that the Leave Type is created successfully.","","2026-10-05","passed","2026-10-05","","","",""
 "As an OrangeHRM user
   I want to login with valid credentials
   So that I can access the employee dashboard","6856","Login with an invalid credentials","","2026-10-04","passed","2026-10-04","","","",""
-"","13820","Create a new Leave Type and assert that the Leave Type is created successfully.","","2026-10-04","passed","2026-10-04","","","",""
 "As an OrangeHRM user
   I want to login with valid credentials
-  So that I can access the employee dashboard","5298","login is rejected when credentials are missing","","2026-10-04","passed","2026-10-04","","","",""
+  So that I can access the employee dashboard","9008","Login with an invalid credentials","","2026-10-05","passed","2026-10-05","","","",""
 "As an OrangeHRM user
   I want to login with valid credentials
   So that I can access the employee dashboard","6817","Login with a valid credentials","","2026-10-04","passed","2026-10-04","","","",""
+"","27406","Create a new employee and search for it in the Employee List page then delete all the records in the Employee List page.","","2026-10-04","passed","2026-10-04","","","",""
+"","12624","Create an existing Leave Type and assert that Already exists message is displayed.","","2026-10-04","passed","2026-10-04","","","",""
+"As an OrangeHRM user
+  I want to login with valid credentials
+  So that I can access the employee dashboard","6889","login is rejected when credentials are missing","","2026-10-04","passed","2026-10-04","","","",""
+"","13820","Create a new Leave Type and assert that the Leave Type is created successfully.","","2026-10-04","passed","2026-10-04","","","",""
