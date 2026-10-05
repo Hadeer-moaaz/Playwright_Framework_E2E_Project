@@ -10,4 +10,4 @@ Scenario Outline:
 
 Examples:
     | EmployeeName |username | password | confirmPassword |
-    | A     | Jesica09      | Uppercase@34       | Uppercase@34     |
+    | A     | Jesica908      | Uppercase@234       | Uppercase@234     |

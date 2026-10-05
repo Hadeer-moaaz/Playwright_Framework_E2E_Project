@@ -19,9 +19,9 @@ Scenario Outline: Create a new employee and search for it in the Employee List p
 
     Examples:
       | firstname | lastname | employeeId |employeename|
-      | David|  Omar|  794|  David Omar| 
+      | David|  Omar|  43222|  David Omar| 
 
-@Regression2
+@smoke2
  Scenario Outline: Search for an non-existing employee in the Employee List page.
     Given User navigates to OrangeHRM login page
     When User login with a valid credentials

@@ -1,6 +1,6 @@
 Feature:
 
-@Sanity
+@Regression2
 Scenario Outline: Create a new Leave Type and assert that the Leave Type is created successfully.
 
     Given User navigates to OrangeHRM login page
@@ -14,7 +14,7 @@ Scenario Outline: Create a new Leave Type and assert that the Leave Type is crea
 
 Examples:
       | leavename |
-      | Paternity999 Leave |
+      | Paternity9099 Leave |
 
 
 @Sanity2
